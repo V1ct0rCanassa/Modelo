@@ -929,3 +929,95 @@ footer{
         margin-bottom: 5%;
     }
 }
+@media (min-width: 769px) and (max-width: 1024px){
+    /*Header*/
+    header{
+        height: 16vh;
+    }
+    #arealogo{
+        width: 25%;
+        margin-right: 10%;
+    }
+    #arealogo img{
+        width: 45%;
+    }
+    header nav {
+        width: 75%;
+    }
+    header nav a {
+        font-size: 18px;
+    }
+    /*Main*/
+    .carrossel {
+        height: 95vh;
+    }
+    .areabanner{
+        height: 95vh;
+        padding-bottom: 0;
+    }
+    .titulosobre {
+        width: 20%;
+    }
+    .textosobre{
+        font-size: 20px;
+        margin-top: 2.5%;
+    }
+    #ambiente{
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+    .tituloambiente {
+        margin-top: 5%;
+    }
+    #ambiente .dotted-line {
+        margin-bottom: 2.5%;
+        width: 50%;
+    }
+    .imagensambiente{
+        flex-flow: row wrap;
+    }
+    .imagensambiente img {
+        width: 30%;
+        margin-top: 2.5%;
+        margin-left: 1.5%;
+    }
+    /*Footer*/
+    #areainform{
+        margin-top: 2.5%;
+        margin-bottom: 10%;
+    }
+    #areainform img {
+        width: 50%;
+    }
+    .logotxt {
+        width: 40%;
+        font-size: 22px;
+    }
+    .conteudoinfo {
+        width: 90%;
+        margin-left: 5%;
+        font-size: 18px;
+    }
+    .areamapa{
+        margin-bottom: 5%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    .titulomapa {
+        font-size: 20px;
+    }
+    #areafuncionamento{
+        margin-bottom: 5%;
+    }
+    .titulofuncionamento {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .conteudofuncionamento {
+        font-size: 15px;
+    }
+    #eu a{
+        font-size: 18px;
+        margin-bottom: 5%;
+    }
+}

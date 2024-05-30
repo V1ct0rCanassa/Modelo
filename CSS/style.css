@@ -1,0 +1,825 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+}
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Header*/
+header {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+    background-color: #e5e3e5;
+    padding: 1%;
+    z-index: 2;
+    box-shadow: 0px 0px 10px #000000;
+}
+#arealogo{
+    display: flex;
+    width: 15%;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-right: 30%;
+}
+#arealogo img{
+    width: 50%;
+}
+.logotxt{
+    width: 50%;
+    font-size: 23px;
+    color: #e5e3e5;
+}
+header nav{
+    width: 65%;
+}
+header nav ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #007a3e;
+    font-size: 20px;
+    transition: 0.5s;
+}
+header nav a:hover{
+    color: #000000;
+}
+
+/*Main*/
+
+main {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 15vh; 
+}
+.carrossel {
+    overflow: hidden;
+    width: 100%;
+    height: calc(100vh - 15vh);
+    z-index: 0;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.areabanner {
+    width: 100%;
+    display: flex;
+    padding-bottom: 3.5%;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+#imgbanner{
+    width: 100%;
+    object-fit: cover;
+}
+.area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+}
+#sobrenos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #e5e3e5;
+    padding-top: 5%;
+    padding-bottom: 4%;
+}
+#titulosob{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+#titulosobre{
+    width: 50%;
+    font-size: 30px;
+    margin-top: 5%;
+}
+.titulosobre{
+    width: 15%;
+    font-size: 30px;
+    color: #007a3e;
+}
+.dotted-line {
+    border-top: 3px solid #007a3e; 
+    width: 10%; 
+    margin: 10px 0; 
+}
+
+.textosobre{
+    width: 90%;
+    font-size: 20px;
+    margin-bottom: 5%;
+    color: #007a3e;
+}
+
+#servicos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.areaservicos{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5%;
+    padding-top: 1.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 2.5%;
+    border-radius: 35px;
+    background-color: #007a3e;
+    margin-left: 2.5%;
+    color: #ffffff;
+    
+}
+.areaservicos:last-child{
+    margin-right: 2.5%;
+}
+.areaservicos img{
+    width: 45%;
+    margin-top: 2.5%;
+}
+#tituloservicos{
+    font-size: 20px;
+    width: 100%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+#textoservicos{
+    font-size: 14px;
+    width: 100%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+#ambiente{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    padding-top: 1.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 2.5%;
+    background-color: #d4d3d3;
+    box-shadow: 0px 0px 8px #000000
+}
+.tituloambiente{
+    width: 100%;
+    margin-top: 1.5%;
+    font-size: 25px;
+    text-align: center;
+    color: #007a3e;
+}
+#ambiente .dotted-line{
+    border-top: 3px solid #007a3e; 
+    width: 35%; 
+    margin: 10px 0;
+}
+.imagensambiente{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.imagensambiente img{
+    width: 15%;
+    margin-top: 2.5%;
+    margin-left: 0.5%;
+}
+
+/*Footer*/
+footer{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #285045;
+    padding-top: 5%;
+}
+#areainform{
+    width: 25%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 8%;
+    color: #ffffff;
+}
+#areainform img{
+    width: 40%;
+    color: #ffffff;
+}
+#textologo{
+    width: 50%;
+    font-size: 23px;
+    color: #007a3e;
+}
+.conteudoinfo{
+    width: 90%;
+    margin-left: 10%;
+    font-size: 18px;
+    margin-top: 1.5%;
+}
+.areamapa{
+    width: 25%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 5%;
+    color: #ffffff;
+}
+.titulomapa{
+    width: 100%;
+    font-size: 23px;
+    margin-bottom: 2.5%;
+    text-align: center;
+}
+.areamapa iframe{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 2.5%;
+}
+#areafuncionamento{
+    width: 25%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    color: #ffffff;
+}
+.titulofuncionamento{
+    width: 100%;
+    font-size: 23px;
+    margin-bottom: 5%;
+    text-align: justify;
+}
+.conteudofuncionamento{
+    width: 100%;
+    font-size: 18px;
+    margin-top: 1.5%;
+    margin-bottom: 5%;
+    text-align: justify;
+}
+#eu a{
+    width: 100%;
+    text-decoration: none;
+    color: #FFE8D6;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+/*Area da responsabilidade*/
+
+@media (max-width: 320px){
+    body{
+        width: 100%;
+    }
+
+
+    /*Header*/
+    #arealogo {
+        width: 50%;
+    }
+    
+    header nav{
+        display: none;
+    }
+
+    /*Main*/
+    .carrossel {
+        height: 30vh;
+    }
+    .areabanner{
+        height: 30vh;
+        padding-bottom: 0;
+    }
+    #imgbanner{
+        object-fit: cover;
+    }   
+    #sobrenos{
+        padding-top: 25%;
+        padding-bottom: 20%;
+    }
+    .titulosobre {
+        width: 50%;
+    }
+    .textosobre{
+        font-size: 18px;
+        margin-top: 5%;
+    }
+    #servicos{
+        flex-direction: column;
+    }
+    .areaservicos{
+        width: 90%;
+        margin-top: 5%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20%;
+        padding-bottom: 10%;
+    }
+    .areaservicos:last-child {
+        margin-right: 0;
+    }
+    #tituloservicos{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #textoservicos{
+        width: 90%;
+        margin-bottom: 5%;
+        font-size: 15px;
+        text-align: justify;
+        text-justify: inter-word; 
+        word-spacing: -0.2em; 
+        letter-spacing: normal;
+        line-height: 1.5;
+    }
+    #ambiente{
+        flex-direction: column;
+        padding-bottom: 25%;
+    }
+    .tituloambiente {
+        margin-top: 25%;
+    }
+    #ambiente .dotted-line {
+        margin-bottom: 5%;
+        width: 50%;
+    }
+    .imagensambiente{
+        flex-flow: row wrap;
+    }
+    .imagensambiente img {
+        width: 40%;
+        margin-top: 2.5%;
+        margin-left: 1.5%;
+    }
+
+    /*Footer*/
+    footer{
+        flex-direction: column;
+    }
+    #areainform{
+        width: 90%;
+        margin-top: 10%;
+        margin-bottom: 15%;
+    }
+    #areainform img {
+        width: 50%;
+    }
+    .logotxt {
+        font-size: 18px;
+    }
+    .conteudoinfo {
+        font-size: 16px;
+    }
+    .areamapa{
+        width: 90%;
+        margin-bottom: 15%;
+    }
+    .titulomapa {
+        font-size: 18px;
+    }
+    #areafuncionamento{
+        width: 90%;
+        margin-bottom: 15%;
+    }
+    .titulofuncionamento {
+        font-size: 17px;
+        margin-bottom: 5%;
+    }
+    .conteudofuncionamento {
+        font-size: 15px;
+    }
+    #eu a{
+        font-size: 14px;
+        margin-bottom: 10%;
+    }
+}
+@media (min-width: 321px) and (max-width: 375px){
+    body{
+        width: 100%;
+    }
+
+
+    /*Header*/
+    #arealogo {
+        width: 50%;
+    }
+    
+    header nav{
+        display: none;
+    }
+
+    /*Main*/
+    .carrossel {
+        height: 40vh;
+    }
+    .areabanner{
+        height: 40vh;
+        padding-bottom: 0;
+    }
+    #imgbanner{
+        object-fit: cover;
+    }   
+    #sobrenos{
+        padding-top: 25%;
+        padding-bottom: 20%;
+    }
+    .titulosobre {
+        width: 50%;
+    }
+    .textosobre{
+        font-size: 18px;
+        margin-top: 5%;
+    }
+    #servicos{
+        flex-direction: column;
+    }
+    .areaservicos{
+        width: 90%;
+        margin-top: 5%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20%;
+        padding-bottom: 10%;
+    }
+    .areaservicos:last-child {
+        margin-right: 0;
+    }
+    #tituloservicos{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #textoservicos{
+        width: 90%;
+        margin-bottom: 5%;
+        font-size: 16px;
+        text-align: justify;
+        text-justify: inter-word; 
+        word-spacing: -0.2em; 
+        letter-spacing: normal;
+        line-height: 1.5;
+    }
+    #ambiente{
+        flex-direction: column;
+        padding-bottom: 25%;
+    }
+    .tituloambiente {
+        margin-top: 25%;
+    }
+    #ambiente .dotted-line {
+        margin-bottom: 5%;
+        width: 50%;
+    }
+    .imagensambiente{
+        flex-flow: row wrap;
+    }
+    .imagensambiente img {
+        width: 40%;
+        margin-top: 2.5%;
+        margin-left: 1.5%;
+    }
+
+    /*Footer*/
+    footer{
+        flex-direction: column;
+    }
+    #areainform{
+        width: 90%;
+        margin-top: 10%;
+        margin-bottom: 15%;
+    }
+    #areainform img {
+        width: 50%;
+    }
+    .logotxt {
+        font-size: 21px;
+    }
+    .conteudoinfo {
+        font-size: 18px;
+    }
+    .areamapa{
+        width: 90%;
+        margin-bottom: 15%;
+    }
+    .titulomapa {
+        font-size: 19px;
+    }
+    #areafuncionamento{
+        width: 90%;
+        margin-bottom: 15%;
+    }
+    .titulofuncionamento {
+        font-size: 18px;
+        margin-bottom: 5%;
+    }
+    .conteudofuncionamento {
+        font-size: 16px;
+    }
+    #eu a{
+        font-size: 16px;
+        margin-bottom: 10%;
+    }
+}
+@media (min-width: 376px) and (max-width: 425px){
+    /*Header*/
+    header{
+        padding: 2%;
+    }
+    #arealogo {
+        width: 50%;
+    }
+    
+    header nav{
+        display: none;
+    }
+    /*Main*/
+    .carrossel {
+        height: 45vh;
+    }
+    .areabanner{
+        height: 45vh;
+        padding-bottom: 0;
+    }
+    #sobrenos{
+        padding-top: 25%;
+        padding-bottom: 20%;
+    }
+    .titulosobre {
+        width: 50%;
+    }
+    .textosobre{
+        font-size: 18px;
+        margin-top: 5%;
+    }
+    #servicos{
+        flex-direction: column;
+    }
+    .areaservicos{
+        width: 90%;
+        margin-top: 5%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20%;
+        padding-bottom: 10%;
+    }
+    .areaservicos:last-child {
+        margin-right: 0;
+    }
+    #tituloservicos{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #textoservicos{
+        width: 90%;
+        margin-bottom: 5%;
+        font-size: 16px;
+        text-align: justify;
+        text-justify: inter-word; 
+        word-spacing: -0.2em; 
+        letter-spacing: normal;
+        line-height: 1.5;
+    }
+    #ambiente{
+        flex-direction: column;
+        padding-bottom: 25%;
+    }
+    .tituloambiente {
+        margin-top: 25%;
+    }
+    #ambiente .dotted-line {
+        margin-bottom: 5%;
+        width: 50%;
+    }
+    .imagensambiente{
+        flex-flow: row wrap;
+    }
+    .imagensambiente img {
+        width: 40%;
+        margin-top: 2.5%;
+        margin-left: 1.5%;
+    }
+
+    /*Footer*/
+    footer{
+        flex-direction: column;
+    }
+    #areainform{
+        width: 90%;
+        margin-top: 10%;
+        margin-bottom: 15%;
+    }
+    #areainform img {
+        width: 50%;
+    }
+    .logotxt {
+        font-size: 21px;
+    }
+    .conteudoinfo {
+        font-size: 18px;
+    }
+    .areamapa{
+        width: 90%;
+        margin-bottom: 15%;
+    }
+    .titulomapa {
+        font-size: 19px;
+    }
+    #areafuncionamento{
+        width: 90%;
+        margin-bottom: 15%;
+    }
+    .titulofuncionamento {
+        font-size: 18px;
+        margin-bottom: 5%;
+    }
+    .conteudofuncionamento {
+        font-size: 16px;
+    }
+    #eu a{
+        font-size: 16px;
+        margin-bottom: 10%;
+    }
+}
+@media (min-width: 426px) and (max-width: 555px){
+    /*Header*/
+    header{
+        padding: 2%;
+    }
+    #arealogo {
+        width: 35%;
+    }
+    header nav{
+        display: none;
+    }
+    /*Main*/
+    .carrossel {
+        height: 55vh;
+    }
+    .areabanner{
+        height: 55vh;
+        padding-bottom: 0;
+    }
+    #sobrenos{
+        padding-top: 20%;
+        padding-bottom: 15%;
+    }
+    .titulosobre {
+        width: 50%;
+    }
+    .textosobre{
+        font-size: 18px;
+        margin-top: 5%;
+    }
+    #servicos{
+        flex-direction: column;
+    }
+    .areaservicos{
+        width: 90%;
+        margin-top: 10%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20%;
+        padding-bottom: 5%;
+    }
+    .areaservicos:last-child {
+        margin-right: 0;
+    }
+    #tituloservicos{
+        font-size: 20px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #textoservicos{
+        width: 90%;
+        margin-bottom: 5%;
+        font-size: 18px;
+        text-align: justify;
+        text-justify: inter-word; 
+        word-spacing: -0.2em; 
+        letter-spacing: normal;
+        line-height: 1.5;
+    }
+    #ambiente{
+        flex-direction: column;
+        padding-bottom: 25%;
+    }
+    .tituloambiente {
+        margin-top: 25%;
+    }
+    #ambiente .dotted-line {
+        margin-bottom: 5%;
+        width: 50%;
+    }
+    .imagensambiente{
+        flex-flow: row wrap;
+    }
+    .imagensambiente img {
+        width: 40%;
+        margin-top: 2.5%;
+        margin-left: 1.5%;
+    }
+    /*Footer*/
+    footer{
+        flex-direction: column;
+    }
+    #areainform{
+        width: 90%;
+        margin-top: 10%;
+        margin-bottom: 15%;
+    }
+    #areainform img {
+        width: 40%;
+    }
+    .logotxt {
+        font-size: 22px;
+    }
+    .conteudoinfo {
+        font-size: 20px;
+    }
+    .areamapa{
+        width: 80%;
+        margin-bottom: 15%;
+    }
+    .titulomapa {
+        font-size: 21px;
+    }
+    #areafuncionamento{
+        width: 80%;
+        margin-bottom: 15%;
+    }
+    .titulofuncionamento {
+        font-size: 20px;
+        margin-bottom: 5%;
+    }
+    .conteudofuncionamento {
+        font-size: 18px;
+    }
+    #eu a{
+        font-size: 18px;
+        margin-bottom: 10%;
+    }
+}
+@media

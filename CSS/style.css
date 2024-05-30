@@ -822,4 +822,110 @@ footer{
         margin-bottom: 10%;
     }
 }
-@media
+@media (min-width: 427px) and (max-width: 768px){
+    /*Header*/
+    header{
+        height: 16vh;
+    }
+    #arealogo{
+        width: 25%;
+        margin-right: 10%;
+    }
+    #arealogo img{
+        width: 45%;
+    }
+    header nav {
+        width: 75%;
+    }
+    header nav a {
+        font-size: 16px;
+    }
+    /*Main*/
+    .carrossel {
+        height: 80vh;
+    }
+    .areabanner{
+        height: 80vh;
+        padding-bottom: 0;
+    }
+    #sobrenos{
+        padding-top: 15%;
+        padding-bottom: 10%;
+    }
+    .titulosobre {
+        width: 25%;
+    }
+    .textosobre{
+        font-size: 20px;
+        margin-top: 5%;
+    }
+    .areaservicos{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #textoservicos {
+        font-size: 15px;
+    }
+    #ambiente{
+        flex-direction: column;
+        padding-bottom: 10%;
+    }
+    .tituloambiente {
+        margin-top: 10%;
+    }
+    #ambiente .dotted-line {
+        margin-bottom: 5%;
+        width: 50%;
+    }
+    .imagensambiente{
+        flex-flow: row wrap;
+    }
+    .imagensambiente img {
+        width: 30%;
+        margin-top: 2.5%;
+        margin-left: 1.5%;
+    }
+    /*Footer*/
+    footer{
+        flex-direction: column;
+    }
+    #areainform{
+        width: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #areainform img {
+        width: 20%;
+    }
+    .logotxt {
+        width: 20%;
+        font-size: 22px;
+    }
+    .conteudoinfo {
+        width: 50%;
+        margin-left: 5%;
+        font-size: 20px;
+    }
+    .areamapa{
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .titulomapa {
+        font-size: 21px;
+    }
+    #areafuncionamento{
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .titulofuncionamento {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .conteudofuncionamento {
+        font-size: 18px;
+    }
+    #eu a{
+        font-size: 18px;
+        margin-bottom: 5%;
+    }
+}

@@ -69,7 +69,9 @@ header nav a{
 header nav a:hover{
     color: #000000;
 }
-
+header nav ul li:last-child {
+    display: none;
+}
 /*Main*/
 
 main {
@@ -381,17 +383,18 @@ footer{
 
     /*Header*/
     #arealogo {
-        width: 75%;
+        width: 85%;
+        margin-right: 15%;
     }
     header nav ul li {
         display: none;
     }
       
-      header nav ul li:last-child {
+    header nav ul li:last-child {
         display: list-item;
     }
     header nav a{
-        font-size: 25px;
+        font-size: 30px;
     }
 
     /*Main*/
@@ -525,7 +528,8 @@ footer{
 
     /*Header*/
     #arealogo {
-        width: 50%;
+        width: 85%;
+        margin-right: 15%;
     }
     header nav ul li {
         display: none;
@@ -535,7 +539,7 @@ footer{
         display: list-item;
     }
     header nav a{
-        font-size: 25px;
+        font-size: 30px;
     }
 
     /*Main*/
@@ -667,7 +671,8 @@ footer{
         padding: 2%;
     }
     #arealogo {
-        width: 50%;
+        width: 85%;
+        margin-right: 20%;
     }
     header nav ul li {
         display: none;
@@ -677,7 +682,7 @@ footer{
         display: list-item;
     }
     header nav a{
-        font-size: 25px;
+        font-size: 30px;
     }
 
     /*Main*/
@@ -806,7 +811,8 @@ footer{
         padding: 2%;
     }
     #arealogo {
-        width: 35%;
+        width: 65%;
+        margin-right: 35%;
     }
     header nav ul li {
         display: none;
@@ -816,7 +822,7 @@ footer{
         display: list-item;
     }
     header nav a{
-        font-size: 50px;
+        font-size: 32px;
     }
 
     /*Main*/
@@ -844,7 +850,7 @@ footer{
         padding-bottom: 15%;
     }
     .titulosobre {
-        width: 50%;
+        width: 35%;
     }
     .textosobre{
         font-size: 18px;
@@ -939,23 +945,26 @@ footer{
         margin-bottom: 10%;
     }
 }
-@media (min-width: 427px) and (max-width: 768px){
+@media (min-width: 555px) and (max-width: 768px){
     /*Header*/
     header{
         height: 16vh;
     }
     #arealogo{
         width: 25%;
-        margin-right: 10%;
+        margin-right: 2.5%;
     }
     #arealogo img{
         width: 45%;
+    }
+    #textologo {
+        font-size: 18px;
     }
     header nav {
         width: 75%;
     }
     header nav a {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     /*Main*/
@@ -1155,7 +1164,10 @@ footer{
         font-size: 20px;
     }
     #areafuncionamento{
+        width: 35%;
         margin-bottom: 5%;
+        margin-left: 2%;
+        margin-right: 0;
     }
     .titulofuncionamento {
         font-size: 18px;

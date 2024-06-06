@@ -29,7 +29,7 @@ header {
     align-items: center;
     background-color: #e5e3e5;
     padding: 1%;
-    z-index: 2;
+    z-index: 10;
     box-shadow: 0px 0px 10px #000000;
 }
 #arealogo{
@@ -64,6 +64,7 @@ header nav a{
     color: #007a3e;
     font-size: 20px;
     transition: 0.5s;
+    rotate: 90deg;
 }
 header nav a:hover{
     color: #000000;
@@ -79,6 +80,47 @@ main {
     align-items: center;
     width: 100%;
     margin-top: 15vh; 
+}
+.barralateral {
+    width: 15%;
+    position: fixed;
+    top: 13vh;
+    left: 85%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 12;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+    background-color: #e5e3e5;
+    box-shadow: 0px 0px 5px #000000;
+}
+.barralateral ul{
+    width: 100%;
+    list-style: none;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    background-color: #e5e3e5;
+}
+.barralateral ul li{
+    width: 100%;
+    padding-left: 10%;
+}
+.barralateral a{
+    text-decoration: none;
+    width: 100%;
+    color: #007a3e;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.barralateral a:hover{
+    color: #000000;
+}
+.dotted-linel {
+    border-top: 2px solid #007a3e; 
+    width: 80%; 
+    margin-left: 10%; 
+    margin-bottom: 10%;
 }
 .carrossel {
     overflow: hidden;
@@ -339,14 +381,32 @@ footer{
 
     /*Header*/
     #arealogo {
-        width: 50%;
+        width: 75%;
     }
-    
-    header nav{
+    header nav ul li {
         display: none;
+    }
+      
+      header nav ul li:last-child {
+        display: list-item;
+    }
+    header nav a{
+        font-size: 25px;
     }
 
     /*Main*/
+    .barralateral {
+        width: 80%;
+        top: 15vh;
+        left: 20%;
+    }
+    .barralateral ul{
+        padding-top: 20%;
+        padding-bottom: 5%;
+    }
+    .dotted-linel { 
+        margin-bottom: 20%;
+    }
     .carrossel {
         height: 30vh;
     }
@@ -467,12 +527,30 @@ footer{
     #arealogo {
         width: 50%;
     }
-    
-    header nav{
+    header nav ul li {
         display: none;
+    }
+      
+      header nav ul li:last-child {
+        display: list-item;
+    }
+    header nav a{
+        font-size: 25px;
     }
 
     /*Main*/
+    .barralateral {
+        width: 70%;
+        top: 15vh;
+        left: 30%;
+    }
+    .barralateral ul{
+        padding-top: 20%;
+        padding-bottom: 5%;
+    }
+    .dotted-linel { 
+        margin-bottom: 20%;
+    }
     .carrossel {
         height: 40vh;
     }
@@ -591,11 +669,30 @@ footer{
     #arealogo {
         width: 50%;
     }
-    
-    header nav{
+    header nav ul li {
         display: none;
     }
+      
+      header nav ul li:last-child {
+        display: list-item;
+    }
+    header nav a{
+        font-size: 25px;
+    }
+
     /*Main*/
+    .barralateral {
+        width: 70%;
+        top: 15vh;
+        left: 30%;
+    }
+    .barralateral ul{
+        padding-top: 20%;
+        padding-bottom: 5%;
+    }
+    .dotted-linel { 
+        margin-bottom: 20%;
+    }
     .carrossel {
         height: 45vh;
     }
@@ -711,10 +808,30 @@ footer{
     #arealogo {
         width: 35%;
     }
-    header nav{
+    header nav ul li {
         display: none;
     }
+      
+      header nav ul li:last-child {
+        display: list-item;
+    }
+    header nav a{
+        font-size: 50px;
+    }
+
     /*Main*/
+    .barralateral {
+        width: 50%;
+        top: 15vh;
+        left: 50%;
+    }
+    .barralateral ul{
+        padding-top: 20%;
+        padding-bottom: 5%;
+    }
+    .dotted-linel { 
+        margin-bottom: 20%;
+    }
     .carrossel {
         height: 55vh;
     }
@@ -840,7 +957,23 @@ footer{
     header nav a {
         font-size: 16px;
     }
+
     /*Main*/
+    .barralateral {
+        width: 25%;
+        top: 15vh;
+        left: 75%;
+    }
+    .barralateral ul{
+        padding-top: 20%;
+        padding-bottom: 5%;
+    }
+    .barralateral a{
+        font-size: 16px;
+    }
+    .dotted-linel { 
+        margin-bottom: 20%;
+    }
     .carrossel {
         height: 80vh;
     }
@@ -948,6 +1081,21 @@ footer{
         font-size: 18px;
     }
     /*Main*/
+    .barralateral {
+        width: 25%;
+        top: 15vh;
+        left: 75%;
+    }
+    .barralateral ul{
+        padding-top: 20%;
+        padding-bottom: 5%;
+    }
+    .barralateral a{
+        font-size: 18px;
+    }
+    .dotted-linel { 
+        margin-bottom: 20%;
+    }
     .carrossel {
         height: 95vh;
     }
